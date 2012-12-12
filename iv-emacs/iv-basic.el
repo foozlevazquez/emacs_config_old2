@@ -38,9 +38,12 @@
 (set-foreground-color "GREEN")
 (set-cursor-color "RED")
 
+;; sanity helpers
+(setq mouse-yank-at-point t)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
+;; desktop
+(setq desktop-dirname user-emacs-directory)
 (desktop-save-mode 1)
-
-(if (null (cdr command-line-args))
-    (setq inihibit-startup-message (recover-context)))
-
 
