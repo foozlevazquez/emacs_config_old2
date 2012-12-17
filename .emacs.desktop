@@ -1,0 +1,469 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Dec 16 20:16:47 2012
+;; Desktop file format version 206
+;; Emacs version 24.2.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("do" "irb" "run-ruby" "start-pro" "irb" "return" "dir" "require" "vendo" "modul" "submodul" "sketchup.rb" "&&" "-a" "century" "mono"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/iv-emacs/iv-default.el" "~/.emacs.d/iv-emacs/iv-default" "~/.emacs.d/iv-vendors.el" "~/.emacs.d/" "~/" "~/.emacs.d/iv-emacs/" "~/.emacs.d/iv-emacs/iv-vendors.el" "c:/cygwin/home/Ivan Vazquez/emacs_config/iv-emacs/" "~/emacs_config/iv-emacs/" "~/emacs_config/iv-emacs/iv-default.el" "~/emacs_config/iv-emacs/" "c:/cygwin/home/Ivan Vazquez/emacs_config/" "~/" "~/.emacs.d/" "~/Google/.gitignore" "~/Google/Google SketchUp 8/SketchUp/Plugins/" "c:/cygwin/bin/" "~/.emacs.d/iv-emacs/iv-arch-w32.el" "~/.emacs.d/" "~/.emacs.d/vendors/" "~/.emacs.d/iv-emacs/iv-vendors.el" "~/.emacs.d/iv-emacs" "~/.emacs.d" "c:/Program Files (x86)/Google/Google SketchUp 8/Plugins/load_local_plugins.rb" "~/Google/Google SketchUp 8/SketchUp/Plugins/" "c:/Program Files (x86)/Google/Google SketchUp 8/Plugins/" "~/Google/Google SketchUp 8/SketchUp/Plugins/vendors/" "~/Google/Google SketchUp 8/SketchUp/Plugins/vendors/PluginLoader/as_plugins/as_pluginloader/" "~/Google/Google SketchUp 8/SketchUp/" "~/Google/Google SketchUp 8/SketchUp/Plugins/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/iv-emacs/iv-default.el"
+  "iv-default.el"
+  'emacs-lisp-mode
+  nil
+  229
+  '(190 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  nil
+  135
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  nil
+  "iv-emacs"
+  'dired-mode
+  nil
+  864
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/iv-emacs/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  ".emacs.d"
+  'dired-mode
+  nil
+  627
+  '(1 nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d.work/vendors/inf-ruby.git/inf-ruby.el"
+  "inf-ruby.el<2>"
+  'emacs-lisp-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "inf-ruby.git<2>"
+  'dired-mode
+  nil
+  343
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d.work/vendors/inf-ruby.git/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "vendors<3>"
+  'dired-mode
+  nil
+  260
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d.work/vendors/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  ".emacs.d.work"
+  'dired-mode
+  nil
+  889
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d.work/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "Roaming"
+  'dired-mode
+  nil
+  328
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/iv_load_vendors.rb"
+  "iv_load_vendors.rb"
+  'ruby-mode
+  nil
+  331
+  '(248 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . iso-latin-1-dos)))
+
+(desktop-create-buffer 206
+  nil
+  "Google"
+  'dired-mode
+  nil
+  263
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "Google SketchUp 8"
+  'dired-mode
+  nil
+  212
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "SketchUp"
+  'dired-mode
+  nil
+  225
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "Plugins<2>"
+  'dired-mode
+  nil
+  236
+  '(1 nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/PurgeAll.rb"
+  "PurgeAll.rb"
+  'ruby-mode
+  nil
+  3128
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "c:/Program Files (x86)/emacs-24.2/lisp/simple.el"
+  "simple.el"
+  'emacs-lisp-mode
+  nil
+  107515
+  '(106759 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/vendors/inf-ruby.git/inf-ruby.el"
+  "inf-ruby.el"
+  'emacs-lisp-mode
+  nil
+  2139
+  '(777 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/iv-emacs/iv-arch-w32.el"
+  "iv-arch-w32.el"
+  'emacs-lisp-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "c:/Program Files (x86)/Google/Google SketchUp 8/Tools/sketchup.rb"
+  "sketchup.rb"
+  'ruby-mode
+  nil
+  3321
+  '(3439 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "inf-ruby.git"
+  'dired-mode
+  nil
+  338
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/vendors/inf-ruby.git/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "vendors<2>"
+  'dired-mode
+  nil
+  255
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/.emacs.d/vendors/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/Program Files (x86)/Google/Google SketchUp 8/Plugins/load_local_plugins.rb"
+  "load_local_plugins.rb<2>"
+  'ruby-mode
+  nil
+  576
+  '(576 nil)
+  t
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/HideOnOtherPages.rb"
+  "HideOnOtherPages.rb"
+  'ruby-mode
+  nil
+  808
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  nil
+  "Plugins"
+  'dired-mode
+  nil
+  520
+  '(1 nil)
+  t
+  '("c:/Program Files (x86)/Google/Google SketchUp 8/Plugins/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/Ruby-Code-Editor-for-SketchUp/as_plugins/as_rubyeditor/as_rubyeditor.rb"
+  "as_rubyeditor.rb"
+  'ruby-mode
+  nil
+  16112
+  '(14585 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "as_rubyeditor"
+  'dired-mode
+  nil
+  356
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/Ruby-Code-Editor-for-SketchUp/as_plugins/as_rubyeditor/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "as_plugins<2>"
+  'dired-mode
+  nil
+  329
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/Ruby-Code-Editor-for-SketchUp/as_plugins/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "Ruby-Code-Editor-for-SketchUp"
+  'dired-mode
+  nil
+  517
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/Ruby-Code-Editor-for-SketchUp/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "vendors"
+  'dired-mode
+  nil
+  429
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "PluginLoader"
+  'dired-mode
+  nil
+  449
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/PluginLoader/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "as_plugins"
+  'dired-mode
+  nil
+  261
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/PluginLoader/as_plugins/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "as_pluginloader"
+  'dired-mode
+  nil
+  286
+  '(nil nil)
+  t
+  '("c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/PluginLoader/as_plugins/as_pluginloader/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/Plugins/vendors/PluginLoader/as_plugins/as_pluginloader/as_pluginloader.rb"
+  "as_pluginloader.rb"
+  'ruby-mode
+  nil
+  6209
+  '(6209 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos)))
+
+(desktop-create-buffer 206
+  "c:/Users/Ivan Vazquez/AppData/Roaming/Google/Google SketchUp 8/SketchUp/README"
+  "README"
+  'fundamental-mode
+  nil
+  259
+  '(258 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . iso-latin-1-dos)))
+
+(desktop-create-buffer 206
+  nil
+  "Google SketchUp 8<2>"
+  'dired-mode
+  nil
+  1916
+  '(261 nil)
+  t
+  '("c:/Program Files (x86)/Google/Google SketchUp 8/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "Ivan Vazquez"
+  'dired-mode
+  nil
+  971
+  '(nil nil)
+  t
+  '("c:/cygwin/home/Ivan Vazquez/")
+  nil)
+
+(desktop-create-buffer 206
+  "c:/cygwin/home/Ivan Vazquez/foozlan-windowssetup/setup_emacs"
+  "setup_emacs"
+  'sh-mode
+  nil
+  1391
+  '(1044 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "foozlan-windowssetup"
+  'dired-mode
+  nil
+  314
+  '(nil nil)
+  t
+  '("c:/cygwin/home/Ivan Vazquez/foozlan-windowssetup/")
+  nil)
+
+(desktop-create-buffer 206
+  "//alcazar/Documents/MasterArchv/emacs-lisp/iv-emacs/iv-default.el"
+  "iv-default.el<2>"
+  'emacs-lisp-mode
+  nil
+  5346
+  '(5339 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "emacs-lisp"
+  'dired-mode
+  nil
+  1749
+  '(349 nil)
+  t
+  '("//alcazar/Documents/MasterArchv/emacs-lisp/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "fonts"
+  'dired-mode
+  nil
+  220
+  '(nil nil)
+  t
+  '("//alcazar/Documents/MasterArchv/emacs-lisp/iv-emacs/fonts/")
+  nil)
+
