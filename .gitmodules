@@ -12,4 +12,4 @@
 	url = git://github.com/pinard/Pymacs.git
 [submodule "vendors/auto-complete"]
 	path = vendors/auto-complete
-	url = http://github.com/m2ym/auto-complete
+	url = https://github.com/auto-complete/auto-complete
