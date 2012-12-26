@@ -2,7 +2,9 @@
 ;;; iv-default.el
 ;;;
 
-(load (format "iv-arch-%s" window-system)) ; i.e. "iv-arch-w32", "iv-arch-x"
+;; i.e. "iv-arch-w32", "iv-arch-x"
+(let ((arch-init-file (format "iv-arch-%s" window-system)))
+  (load arch-init-file))
 
 (load "iv-basic")
 (load "iv-keys")
