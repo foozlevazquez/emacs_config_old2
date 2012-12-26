@@ -8,7 +8,7 @@
 (setq-default indent-tabs-mode nil)
 (setq-default column-number-mode t)
 (setq-default truncate-partial-width-windows nil)
-
+(setq-default eval-expression-print-length nil)
 ;; PDFs
 
 (add-to-list 'auto-mode-alist '("\\.pdf\\'" . no-pdf))

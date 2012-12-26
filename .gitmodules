@@ -7,3 +7,9 @@
 [submodule "vendors/emacs-w3m"]
 	path = vendors/emacs-w3m
 	url = git://github.com/sjatkinson/emacs-w3m.git
+[submodule "vendors/pymacs"]
+	path = vendors/pymacs
+	url = git://github.com/pinard/Pymacs.git
+[submodule "vendors/auto-complete"]
+	path = vendors/auto-complete
+	url = http://github.com/m2ym/auto-complete

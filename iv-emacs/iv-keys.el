@@ -40,5 +40,3 @@
 (global-set-key "\C-x\C-p" 'other-window-backward)
 
 (global-set-key "\C-Cc" 'compile)
-
-
