@@ -17,3 +17,8 @@
 ;; '(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY"))
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
+
+(require 'auto-complete)
+(global-auto-complete-mode t)
+(define-key ac-complete-mode-map "\C-n" 'ac-next)
+(define-key ac-complete-mode-map "\C-p" 'ac-previous)
