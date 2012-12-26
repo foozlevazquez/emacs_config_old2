@@ -1,0 +1,3 @@
+[submodule "vendors/inf-ruby"]
+	path = vendors/inf-ruby
+	url = git://github.com/nonsequitur/inf-ruby.git
