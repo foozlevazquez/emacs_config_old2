@@ -1,5 +1,6 @@
 *~
 *.elc
 *#
-.emacs.deskto*
+.emacs.desktop
+.emacs.desktop.lock
 iv-emacs/NUL
