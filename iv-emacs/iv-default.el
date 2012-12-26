@@ -7,6 +7,7 @@
 
 (load "iv-basic")
 (load "iv-keys")
+(load "iv-py")
 
 (let ((default-directory (concat user-emacs-directory "vendors")))
   (normal-top-level-add-subdirs-to-load-path))
