@@ -2,8 +2,10 @@
 
 if [[ $MACHTYPE =~ cygwin ]]; then
     SUDO=''
+    EMACS="/cygdrive/c/Program Files (x86)/emacs-24.1/bin/emacs"
 else
     SUDO=sudo
+    EMACS=emacs
 fi
 
 git submodule init && git submodule update
@@ -12,8 +14,10 @@ git submodule init && git submodule update
 
 # auto-complete
 git submodule sync vendors/auto-complete;
-(cd vendors/auto-complete;  cp lib/*/*.el .; \
-    emacs --batch -f batch-byte-compile *.el)
+(cd vendors/auto-complete;  \
+    git submodule init && git submodule update; \
+    cp lib/*/*.el .; \
+    "${EMACS}" --batch -f batch-byte-compile *.el)
 
 
 # emacs-w3m
@@ -23,7 +27,7 @@ git submodule sync vendors/auto-complete;
 # Pymacs, Rope, etc.
 
 (cd vendors/pymacs; make; ${SUDO} make install; \
-    emacs --batch -f batch-byte-compile pymacs.el)
+    "${EMACS}" --batch -f batch-byte-compile pymacs.el)
 
 if [ ! -x /usr/bin/easy_install ]; then
     if [[ $MACHTYPE =~ cygwin ]]; then
