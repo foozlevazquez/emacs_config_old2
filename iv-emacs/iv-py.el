@@ -15,8 +15,11 @@
 (autoload 'pymacs-load "pymacs" nil t)
 
 (if (eq system-type 'windows-nt)
+    (let ((windows-python "python2.6"))
+      (eval-after-load "python" 
+        `(setq python-command ,windows-python))
     (eval-after-load "pymacs"
-      '(setq pymacs-python-command "python2.6")))
+      `(setq pymacs-python-command ,windows-python))))
 
   ;(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY")
 

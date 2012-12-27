@@ -15,6 +15,7 @@
                  'comint-watch-for-password-prompt nil t)
       
        (setq explicit-shell-file-name "bash.exe")
+
        ;; For subprocesses invoked via the shell
        ;; (e.g., "shell -c command")
        (setq shell-file-name explicit-shell-file-name)
