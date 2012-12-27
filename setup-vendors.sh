@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [[ $MACHTYPE =~ cygwin ]]; then
+    SUDO=''
+else
+    SUDO=sudo
+fi
+
 git submodule init && git submodule update
 
 ### Submodule specific commands
@@ -16,15 +22,22 @@ git submodule sync vendors/auto-complete;
 
 # Pymacs, Rope, etc.
 
-(cd vendors/pymacs; make; sudo make install; \
+(cd vendors/pymacs; make; ${SUDO} make install; \
     emacs --batch -f batch-byte-compile pymacs.el)
 
-[ -x /usr/bin/easy_install ] || sudo apt-get install python-setuptools
+if [ ! -x /usr/bin/easy_install ]; then
+    if [[ $MACHTYPE =~ cygwin ]]; then
+        wget http://peak.telecommunity.com/dist/ez_setup.py
+        python ez_setup.py
+    else
+        ${SUDO} apt-get install python-setuptools
+    fi
+fi
 
-sudo easy_install \
+${SUDO} easy_install \
     "http://pypi.python.org/packages/source/r/rope/rope-0.9.4.tar.gz"
-sudo easy_install \
+${SUDO} easy_install \
     "http://pypi.python.org/packages/source/r/ropemacs/ropemacs-0.7.tar.gz"
-sudo easy_install \
+${SUDO} easy_install \
     "http://pypi.python.org/packages/source/r/ropemode/ropemode-0.2.tar.gz"
 
