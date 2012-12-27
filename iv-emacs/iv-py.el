@@ -13,8 +13,13 @@
 (autoload 'pymacs-eval "pymacs" nil t)
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
-;;(eval-after-load "pymacs"
-;; '(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY"))
+
+(if (eq system-type 'windows-nt)
+    (eval-after-load "pymacs"
+      '(setq pymacs-python-command "python2.6")))
+
+  ;(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY")
+
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
 
