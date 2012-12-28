@@ -26,6 +26,7 @@ git submodule sync vendors/auto-complete;
 
 # emacs-w3m
 [ -x /usr/bin/autoconf ] || ${SUDO} apt-get install -y autoconf
+[ -x /usr/bin/w3m ]      || ${SUDO} apt-get install -y w3m
 (cd vendors/emacs-w3m; autoconf && ./configure; make)
 
 
