@@ -47,3 +47,9 @@
 (setq desktop-dirname user-emacs-directory)
 (desktop-save-mode 1)
 
+;; misc
+(setq display-time-day-and-date t)
+(display-time)
+
+
+

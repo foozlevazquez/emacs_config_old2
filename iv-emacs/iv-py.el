@@ -21,6 +21,13 @@
     (eval-after-load "pymacs"
       `(setq pymacs-python-command ,windows-python))))
 
+(eval-after-load "python"
+  '(add-hook 'inferior-python-mode-hook 
+             (lambda ()
+               (python-send-string 
+                "import sys,os; sys.path.append(os.getcwd());"))))
+
+
   ;(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY")
 
 (pymacs-load "ropemacs" "rope-")
