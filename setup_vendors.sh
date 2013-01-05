@@ -51,3 +51,22 @@ ${SUDO} easy_install \
 ${SUDO} easy_install \
     "http://pypi.python.org/packages/source/r/ropemode/ropemode-0.2.tar.gz"
 
+# Pylookup
+if [[ "${MACHTYPE}" =~ cygwin ]]; then
+    (cd vendors/pylookup; \
+        wget http://docs.python.org/2.7/archives/python-2.7.3-docs-html.zip; \
+        unzip python-2.7.2-docs-html.zip; \
+        PYDOCSDIR=./python-2.7.2-docs-html )
+else
+    ${SUDO} apt-get install python2.6-doc
+    if [ ! -x /usr/bin/python2 ]; then
+        latest_python_2=`ls -1 /usr/bin/python2.* | sed -n '$p'`
+        ln -s ${latest_python_2} /usr/bin/python2
+    fi
+    PYDOCSDIR=/usr/share/doc/python2.6/html
+fi
+
+(cd vendors/pylookup; \
+    ./pylookup.py -u ${PYDOCSDIR})
+ 
+    
