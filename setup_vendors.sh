@@ -39,7 +39,7 @@ git submodule init && git submodule update
 [ -x /usr/bin/w3m ]      || ${SUDO} apt-get install -y w3m
 (cd vendors/w3; autoconf && ./configure; \
     echo "(provide 'emacspeak-fix-interactive)" > lisp/emacspeak-fix-interactive.el; \
-    make; make install lispdir="~/.emacs.d/vendors/w3")
+    make; sudo make install lispdir="~/.emacs.d/vendors/w3")
 
 
 # Pymacs, Rope, etc.
