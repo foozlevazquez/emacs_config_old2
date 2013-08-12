@@ -12,17 +12,27 @@ else
     EMACS=emacs
 fi
 
+[ ! -d ./vendors ] && mkdir vendors
+
 git submodule init && git submodule update
 
 ### Submodule specific commands
 
 # auto-complete
-git submodule sync vendors/auto-complete;
-(cd vendors/auto-complete;  \
-    git submodule init && git submodule update; \
-    cp lib/*/*.el .; \
-    "${EMACS}" --batch -f batch-byte-compile *.el)
+# Git recursive submodule stuff is a crock of shit...
+#
+#git submodule sync vendors/auto-complete;
+#(cd vendors/auto-complete;  \
+#    git submodule init && git submodule update; \
+#    cp lib/*/*.el .; \
+#    "${EMACS}" --batch -f batch-byte-compile *.el)
 
+(cd vendors/; 
+    git clone https://github.com/auto-complete/auto-complete; \
+    cd auto-complete; \
+    git submodule init; git submodule update;\
+    find lib -name '*.el' -exec cp {} . \; ;\
+    emacs -Q -L . -batch -f batch-byte-compile *.el )
 
 # emacs-w3m
 [ -x /usr/bin/autoconf ] || ${SUDO} apt-get install -y autoconf
@@ -68,5 +78,4 @@ fi
 
 (cd vendors/pylookup; \
     ./pylookup.py -u ${PYDOCSDIR})
- 
-    
+
