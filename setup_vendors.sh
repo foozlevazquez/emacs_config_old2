@@ -34,10 +34,12 @@ git submodule init && git submodule update
     find lib -name '*.el' -exec cp {} . \; ;\
     emacs -Q -L . -batch -f batch-byte-compile *.el )
 
-# emacs-w3m
+# w3
 [ -x /usr/bin/autoconf ] || ${SUDO} apt-get install -y autoconf
 [ -x /usr/bin/w3m ]      || ${SUDO} apt-get install -y w3m
-(cd vendors/emacs-w3m; autoconf && ./configure; make)
+(cd vendors/w3; autoconf && ./configure; \
+    echo "(provide 'emacspeak-fix-interactive)" > lisp/emacspeak-fix-interactive.el; \
+    make)
 
 
 # Pymacs, Rope, etc.

@@ -4,12 +4,15 @@
 [submodule "vendors/pylookup"]
 	path = vendors/pylookup
 	url = git://github.com/tsgates/pylookup.git
-[submodule "vendors/w3"]
-	path = vendors/w3
-    url = http://git.sv.gnu.org/r/w3.git
 [submodule "vendors/pymacs"]
 	path = vendors/pymacs
 	url = git://github.com/pinard/Pymacs.git
 [submodule "vendors/auto-complete"]
 	path = vendors/auto-complete
 	url = https://github.com/auto-complete/auto-complete
+[submodule "vendors/w3"]
+	path = vendors/w3
+	url = http://git.sv.gnu.org/r/w3.git
+[submodule "vendors/emacspeak"]
+	path = vendors/emacspeak
+	url = https://github.com/emacsmirror/emacspeak.git
