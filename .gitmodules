@@ -4,9 +4,6 @@
 [submodule "vendors/pylookup"]
 	path = vendors/pylookup
 	url = git://github.com/tsgates/pylookup.git
-[submodule "vendors/emacs-w3m"]
-	path = vendors/emacs-w3m
-    url = http://git.sv.gnu.org/r/w3.git
 [submodule "vendors/pymacs"]
 	path = vendors/pymacs
 	url = git://github.com/pinard/Pymacs.git
