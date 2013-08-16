@@ -27,5 +27,9 @@
 (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
 (setq w3m-use-cookies t)
 
-
-
+;; magit
+(require 'magit)
+(eval-after-load 'info
+  '(progn (info-initialize)
+          (add-to-list 'Info-directory-list 
+                       (concat user-emacs-directory "vendors/magit"))))

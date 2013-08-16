@@ -19,7 +19,9 @@
   (let ((modified (buffer-modified-p)))
     (erase-buffer)
     (shell-command
-     (concat "\"c:/Documents and Settings/Ivan Vazquez/My Documents/Program Files/xpdf/pdftotext.exe\" " (buffer-file-name) " -")
+     (concat 
+      "\"c:/Documents and Settings/Ivan Vazquez/My Documents/Program Files/xpdf/pdftotext.exe\" " 
+      (buffer-file-name) " -")
      (current-buffer)
      t)
     (set-buffer-modified-p modified)))
