@@ -13,3 +13,6 @@
 [submodule "vendors/w3"]
 	path = vendors/w3
 	url = http://git.sv.gnu.org/r/w3.git
+[submodule "vendors/magit"]
+	path = vendors/magit
+	url = https://github.com/magit/magit.git
