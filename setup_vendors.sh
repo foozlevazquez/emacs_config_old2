@@ -81,3 +81,5 @@ fi
 (cd vendors/pylookup; \
     ./pylookup.py -u ${PYDOCSDIR})
 
+(cd vendors/git-emacs; \
+    make all)

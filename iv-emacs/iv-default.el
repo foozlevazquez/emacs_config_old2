@@ -33,3 +33,5 @@
   '(progn (info-initialize)
           (add-to-list 'Info-directory-list 
                        (concat user-emacs-directory "vendors/magit"))))
+;; git-emacs
+(require 'git-emacs)
