@@ -54,4 +54,14 @@
 (display-time)
 
 
-
+;; make mode line show wtf is going on
+(set-face-attribute  'mode-line
+                 nil 
+                 :foreground "gray80"
+                 :background "gray25" 
+                 :box '(:line-width 10 :style released-button))
+(set-face-attribute  'mode-line-inactive
+                 nil 
+                 :foreground "gray30"
+                 :background "black"
+                 :box '(:line-width 1 :style released-button))
