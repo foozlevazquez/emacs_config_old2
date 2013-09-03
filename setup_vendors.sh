@@ -27,7 +27,7 @@ git submodule init && git submodule update
 #    cp lib/*/*.el .; \
 #    "${EMACS}" --batch -f batch-byte-compile *.el)
 
-(cd vendors/; 
+(cd vendors/;
     git clone https://github.com/auto-complete/auto-complete; \
     cd auto-complete; \
     git submodule init; git submodule update;\
@@ -83,3 +83,6 @@ fi
 
 (cd vendors/git-emacs; \
     make all)
+
+(cd vendors/win-switch; \
+    "${EMACS}" --batch -f batch-byte-compile win-switch.el)

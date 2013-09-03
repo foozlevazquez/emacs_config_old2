@@ -25,7 +25,7 @@
   (delete-other-windows)
   (save-excursion
     (let ((wwdiv3 (/ (window-width) 3)))
-      (split-window-horizontally wwdiv3)  
+      (split-window-horizontally wwdiv3)
       (other-window 1)
       (split-window-horizontally wwdiv3))))
 
@@ -40,3 +40,9 @@
 (global-set-key "\C-x\C-p" 'other-window-backward)
 
 (global-set-key "\C-Cc" 'compile)
+
+
+(require 'win-switch)
+(setq win-switch-other-window-first nil
+      win-switch-idle-time 3)
+(global-set-key "\C-xo" 'win-switch-dispatch)

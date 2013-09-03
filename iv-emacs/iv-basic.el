@@ -19,8 +19,8 @@
   (let ((modified (buffer-modified-p)))
     (erase-buffer)
     (shell-command
-     (concat 
-      "\"c:/Documents and Settings/Ivan Vazquez/My Documents/Program Files/xpdf/pdftotext.exe\" " 
+     (concat
+      "\"c:/Documents and Settings/Ivan Vazquez/My Documents/Program Files/xpdf/pdftotext.exe\" "
       (buffer-file-name) " -")
      (current-buffer)
      t)
@@ -36,12 +36,17 @@
 
 ;; beautifcation
 
-(set-background-color "BLACK")
-(set-foreground-color "GREEN")
-(set-cursor-color "RED")
+(set-background-color "BLACK"
+                      ;;"grey10"
+                      )
+(set-foreground-color "white"
+                      ;; "GREEN"
+                      )
+(set-cursor-color "pink")
+(setq-default cursor-in-non-selected-windows nil)
 
 ;; sanity helpers
-(setq mouse-yank-at-point t)
+(setq mouse-yank-at-point nil)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
@@ -56,12 +61,12 @@
 
 ;; make mode line show wtf is going on
 (set-face-attribute  'mode-line
-                 nil 
+                 nil
                  :foreground "gray80"
-                 :background "gray25" 
+                 :background "gray25"
                  :box '(:line-width 10 :style released-button))
 (set-face-attribute  'mode-line-inactive
-                 nil 
+                 nil
                  :foreground "gray30"
                  :background "black"
                  :box '(:line-width 1 :style released-button))
