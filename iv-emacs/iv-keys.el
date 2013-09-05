@@ -44,5 +44,5 @@
 
 (require 'win-switch)
 (setq win-switch-other-window-first nil
-      win-switch-idle-time 3)
+      win-switch-idle-time 1)
 (global-set-key "\C-xo" 'win-switch-dispatch)
