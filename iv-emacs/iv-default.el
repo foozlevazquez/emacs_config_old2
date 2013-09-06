@@ -11,7 +11,7 @@
 (load "iv-basic")
 (load "iv-keys")
 (load "iv-py")
-
+(load "iv-gnus")
 
 ;; inf-ruby
 (autoload 'inf-ruby "inf-ruby" "Run an inferior Ruby process" t)
