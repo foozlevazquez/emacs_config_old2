@@ -36,13 +36,53 @@
 
 ;; beautifcation
 
-(set-background-color "BLACK"
-                      ;;"grey10"
-                      )
-(set-foreground-color "white"
-                      ;; "GREEN"
-                      )
-(set-cursor-color "pink")
+(defvar *iv-color-switch-value* 'light
+  "Either 'light or 'dark")
+
+(defvar  *iv-color-maps*
+  '((dark "BLACK" "WHITE" "PINK")
+    (light "WHITE" "BLACK" "PINK")))
+
+
+(defun iv-increment-indicator (indicator mapl)
+  (let ((first (car (car mapl)))
+        found
+        result)
+    (while (and mapl (not found))
+      (if (eq (car (car mapl)) indicator)
+          (setq found t))
+      (setq mapl (cdr mapl)))
+
+    (cond (mapl
+            (setq result (car (car mapl))))
+          (t
+            (setq result first)))
+    result))
+
+
+(defun iv-toggle-colors (&optional scheme)
+  (let (colors)
+    (if scheme
+        (setq *iv-color-switch-value* scheme)
+      (setq *iv-color-switch-value*
+            (iv-increment-indicator *iv-color-switch-value* *iv-color-maps*)))
+    (setq colors (cdr (assoc *iv-color-switch-value* *iv-color-maps*)))
+    (set-background-color (elt colors 0))
+    (set-foreground-color (elt colors 1))
+    (set-cursor-color (elt colors 2))
+    *iv-color-switch-value*))
+
+
+
+
+;;(set-background-color "BLACK"
+;;                      ;;"grey10"
+;;                      )
+;;(set-foreground-color "white"
+;;                      ;; "GREEN"
+;;                      )
+;;(set-cursor-color "pink")
+
 (setq-default cursor-in-non-selected-windows nil)
 
 ;; sanity helpers
