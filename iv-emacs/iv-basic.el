@@ -110,3 +110,10 @@
                  :foreground "gray30"
                  :background "black"
                  :box '(:line-width 1 :style released-button))
+
+
+(defun re-shell ()
+  (interactive)
+  (kill-process (get-buffer-process (current-buffer)))
+  (sit-for 2)
+  (shell))
